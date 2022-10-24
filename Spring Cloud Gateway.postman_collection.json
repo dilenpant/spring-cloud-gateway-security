@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "594effb6-187a-4ef9-b21d-4e20a709804d",
+		"name": "Spring Cloud Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2290760"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8082/courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/students"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/student-service/students",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "343C-ED0B-4137-B27E",
+						"key": "gatewaykey"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/student-service/students"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/course-service/courses",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"value": "FA48-EF0C-427E-8CCF",
+						"key": "gatewaykey"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/course-service/courses"
+			},
+			"response": []
+		}
+	]
+}

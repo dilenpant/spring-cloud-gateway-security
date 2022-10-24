@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.javatechie.security.SpringGatewaySecurityApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.555 s <<< FAILURE! - in com.javatechie.security.SpringGatewaySecurityApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springGatewaySecurityApplication': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed to create socket.
+Caused by: java.net.ConnectException: Connection refused: no further information
+
